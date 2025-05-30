@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* cinza claro */
+    color: #212529;
+    padding-top: 56px; /* espaço para navbar fixa */
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #dc3545; /* vermelho bootstrap 'danger' */
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+  }
+  
+  /* Marca da navbar */
+  .navbar-brand {
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+  
+  /* Toggle button para mobile */
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 1.25rem;
+    display: none; /* esconder por padrão */
+  }
+  
+  /* Ícone do toggle (exemplo simples) */
+  .navbar-toggler-icon {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    position: relative;
+  }
+  
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+  }
+  
+  .navbar-toggler-icon::before {
+    top: -8px;
+  }
+  
+  .navbar-toggler-icon::after {
+    top: 8px;
+  }
+  
+  /* Lista de links da navbar */
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Cada item */
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Links da navbar */
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover e ativo */
+  .nav-link:hover,
+  .nav-item.active .nav-link {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  /* Ícones (assumindo que usa Bootstrap Icons) */
+  i.bi {
+    font-size: 1.1rem;
+  }
+  
+  /* Responsividade básica */
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block;
+    }
+    .navbar-nav {
+      flex-direction: column;
+      background-color: #dc3545;
+      position: absolute;
+      top: 56px;
+      left: 0;
+      width: 100%;
+      display: none;
+    }
+    .navbar-nav.show {
+      display: flex;
+    }
+  }
+  
