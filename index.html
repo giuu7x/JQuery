@@ -3,36 +3,44 @@
 <head>
 <meta charset="UTF-8" />
 <title>Calculadora de Salário</title>
-<link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<style>
-  #resultado {
-    font-weight: bold;
-    font-size: 18pt;
-    color: blue;
-    margin-top: 15px;
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <label for="nome">Nome:</label>
-  <input type="text" id="nome" /><br />
+<nav>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html" title="Página inicial">
+        Calculos
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="pag.html" title="Entre em contato">
+        Home
+      </a>
+    </li>
+  </ul>
+</nav>
 
-  <label for="idade">Idade:</label>
-  <input type="number" id="idade" /><br />
+<label for="nome">Nome:</label>
+<input type="text" id="nome" /><br />
 
-  <label for="dependentes">Dependentes:</label>
-  <input type="number" id="dependentes" /><br />
+<label for="idade">Idade:</label>
+<input type="number" id="idade" /><br />
 
-  <label for="salario">Salário Bruto:</label>
-  <input type="number" id="salario" /><br />
+<label for="dependentes">Dependentes:</label>
+<input type="number" id="dependentes" /><br />
 
-  <button id="btnCalcular">Calcular</button>
+<label for="salario">Salário Bruto:</label>
+<input type="number" id="salario" /><br />
 
-  <div id="resultado"></div>
+<button id="btnCalcular">Calcular</button>
 
-  <script src="js/calculos.js"></script>
+<div id="resultado"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/calculos.js"></script>
+
 </body>
 </html>
