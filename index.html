@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Calculadora de Salário</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+  #resultado {
+    font-weight: bold;
+    font-size: 18pt;
+    color: blue;
+    margin-top: 15px;
+  }
+</style>
+</head>
+<body>
+
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" /><br />
+
+  <label for="idade">Idade:</label>
+  <input type="number" id="idade" /><br />
+
+  <label for="dependentes">Dependentes:</label>
+  <input type="number" id="dependentes" /><br />
+
+  <label for="salario">Salário Bruto:</label>
+  <input type="number" id="salario" /><br />
+
+  <button id="btnCalcular">Calcular</button>
+
+  <div id="resultado"></div>
+
+  <script src="js/calculos.js"></script>
+</body>
+</html>
